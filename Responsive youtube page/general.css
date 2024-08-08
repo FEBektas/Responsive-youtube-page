@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   --- Mobile Design ---   */
+
+/* --- Header ---  */
+
+.header {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  justify-content: space-between;
+  display: flex;
+  height: 48px;
+  justify-items: center;
+  align-items: center;
+}
+
+.profile-picture {
+  margin-left: 20px;
+  height: 30px;
+  width: auto;
+  border-radius: 30px;
+}
+
+#youtube-logo {
+  margin-left: 20px;
+  width: 80px;
+  height: auto;
+  background-color: white;
+}
+
+.search-icon {
+  width: 30px;
+  height: auto;
+}
+
+/* --- Second Header --- */
+
+.second-header {
+  margin-top: -1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explore-icon {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 25px;
+  width: auto;
+}
+
+.clases-container {
+  font-size: 18px;
+  font-weight: 700;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*   --- Tablet Design ---   */
+
+/* @media only screen and (min-width: 600px) {
+  .header {
+    background-color: rgb(131, 218, 124);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .header {
+    background-color: rgb(223, 41, 41);
+  }
+} */
