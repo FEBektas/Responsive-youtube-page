@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
+}
+
+body {
+  height: 1000px;
 }
 
 /*   --- Mobile Design ---   */
@@ -21,7 +27,7 @@
 
 .profile-picture {
   margin-left: 20px;
-  height: 30px;
+  height: 32px;
   width: auto;
   border-radius: 30px;
 }
@@ -34,7 +40,7 @@
 }
 
 .search-icon {
-  width: 30px;
+  width: 24px;
   height: auto;
 }
 
@@ -49,16 +55,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
 }
 
 .explore-icon {
   border-style: solid;
   border-width: 1px;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
+  margin-left: 5px;
   height: 25px;
   width: auto;
 }
@@ -68,11 +82,65 @@
   font-weight: 700;
   border-style: solid;
   border-width: 1px;
-  border-color: black;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
+  border-color: rgba(0, 0, 0, 0.8);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+
+/*  --- Video Designs ---*/
+
+.thumbnail {
+  height: auto;
+  width: 467px;
+}
+
+.thumnnail-row {
+  position: relative;
+}
+
+.duration-bar {
+  position: absolute;
+  width: 467px;
+  height: 4px;
+  background-color: red;
+  bottom: 0;
+}
+
+.timer {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+}
+
+.avatar {
+  margin-top: 10px;
+  width: 40px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.video-information-grid {
+  display: flex;
+}
+
+.video-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
 }
 
 /*   --- Tablet Design ---   */
