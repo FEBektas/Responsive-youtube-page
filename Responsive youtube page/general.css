@@ -3,40 +3,58 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
-}
-
-body {
-  height: 1000px;
+  border: 0;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 /*   --- Mobile Design ---   */
 
 /* --- Header ---  */
 
-.header {
+h1 {
   border-style: solid;
   border-width: 1px;
   border-color: lightgray;
-  justify-content: space-between;
   display: flex;
   height: 48px;
-  justify-items: center;
+  justify-content: space-between;
+}
+
+.right-section {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-right: -10px;
 }
 
 .profile-picture {
   margin-left: 20px;
-  height: 32px;
+  height: 24px;
   width: auto;
   border-radius: 30px;
+  margin-right: 18px;
 }
 
-#youtube-logo {
+.header-youtube-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: -10px;
+}
+
+.youtube-logo {
+  color: red;
   margin-left: 20px;
-  width: 80px;
+  width: 28px;
   height: auto;
-  background-color: white;
+}
+
+.header-youtube-text {
+  margin: 0;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 2px;
 }
 
 .search-icon {
@@ -46,7 +64,8 @@ body {
 
 /* --- Second Header --- */
 
-.second-header {
+h2 {
+  box-shadow: inset 0px 2px 5px rgba(209, 209, 209, 0.5);
   margin-top: -1px;
   border-style: solid;
   border-width: 1px;
@@ -54,51 +73,125 @@ body {
   height: 48px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 1px;
 }
 
-.right-section {
-  display: flex;
-  align-items: center;
-}
-
 .explore-icon {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.8);
+  border-style: none;
+  background-color: rgba(179, 179, 179, 0.2);
   border-radius: 3px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
   height: 25px;
   width: auto;
 }
 
 .clases-container {
-  font-size: 18px;
-  font-weight: 700;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.clases {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 15px;
+  background-color: rgba(179, 179, 179, 0.2);
+  border-width: 1px;
+  color: black;
+}
+
+.clases-container {
+  display: flex;
+  justify-content: space-evenly;
+  border-style: none;
+  font-size: 15px;
+  background-color: rgba(179, 179, 179, 0.2);
+  border-width: 1px;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  transition: background-color 0.05s, color 0.05s;
+}
+
+.clases-container:active {
+  background-color: grey;
+  color: white;
+}
+
+/*   --- Footer ---   */
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+
+  bottom: 0;
+  overflow: visible !important;
+}
+
+#Footers {
   border-style: solid;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.8);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
-  margin-right: 5px;
-  border-radius: 8px;
+  border-color: lightgray;
+  background-color: white;
+  z-index: 100;
+  min-height: 48px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Footer p {
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.home-icon,
+.music-icon,
+.subscription-icon,
+.library-icon {
+  width: 24px;
+  height: auto;
+}
+
+.Home,
+.Music,
+.Subscription,
+.Library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
 }
 
 /*  --- Video Designs ---*/
 
-.thumbnail {
-  height: auto;
-  width: 467px;
+.video-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
 }
 
-.thumnnail-row {
+.thumbnail {
+  height: auto;
+  max-width: 100%;
+}
+
+.video-preview {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.thumbnail-row {
   position: relative;
 }
 
@@ -112,8 +205,8 @@ body {
 
 .timer {
   position: absolute;
-  right: 10px;
-  bottom: 12px;
+  right: 8px;
+  bottom: 8px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-size: 12px;
@@ -125,10 +218,13 @@ body {
 }
 
 .avatar {
+  margin-left: 8px;
+  margin-right: 8px;
   margin-top: 10px;
   width: 40px;
   height: auto;
-  border-radius: 20px;
+  border-radius: 28px;
+  margin-left: 15px;
 }
 
 .video-information-grid {
@@ -140,7 +236,31 @@ body {
   flex-direction: column;
 }
 
+.video-title {
+  max-width: 350px;
+}
+
+.video-author-stats {
+  max-width: 350px;
+}
+
 .title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 3px;
+  line-height: 18px;
+}
+
+.author-stats {
+  font-size: 13px;
+}
+
+.three-dots {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-size: 20px;
 }
 
 /*   --- Tablet Design ---   */
